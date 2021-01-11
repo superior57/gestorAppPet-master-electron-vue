@@ -1,0 +1,80 @@
+{
+  "name": "gestor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:build32": "vue-cli-service electron:build && vue-cli-service electron:build --ia32",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "lodash": "^4.17.15",
+    "material-design-icons-iconfont": "^5.0.1",
+    "moment": "^2.24.0",
+    "nprogress": "^0.2.0",
+    "roboto-fontface": "*",
+    "sass": "^1.23.7",
+    "sass-loader": "^9.0.2",
+    "socket.io-client": "^2.3.0",
+    "v-emoji-picker": "^2.2.0",
+    "vue": "^2.6.11",
+    "vue-cli-plugin-vuetify": "^2.0.3-beta.2",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.3",
+    "vue-swal": "^1.0.0",
+    "vuetify": "^2.1.15",
+    "vuetify-loader": "^1.4.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-service": "^4.1.1",
+    "babel-eslint": "^10.0.3",
+    "electron": "^9.1.0",
+    "eslint": "^7.4.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-electron-builder": "^2.0.0-rc.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-restricted-syntax": [
+        "error",
+        {
+          "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+          "message": "Unexpected property on console object was called"
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

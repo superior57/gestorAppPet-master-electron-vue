@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/filiwoe/appPetBack.git
+[submodule "integrator"]
+	path = integrator
+	url = https://github.com/filiwoe/api_front_pet.git

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  display: block;
+  overflow: hidden;
+}
+
+#nprogress .bar {
+  background-color: darkcyan !important;
+  height: 4px !important;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.message-dialog {
+  background-color: var(--v-color1-base) !important;
+}
+
+.left-card {
+  float: left;
+}
+
+.div-workspace {
+  height: calc(100vh - 145px);
+  margin-left: 250px;
+}
+
+.div-header {
+  display: flex;
+}
+
+.div-overflow {
+  overflow-y: auto;
+}
+
+.title-grid {
+  background-color: var(--v-color1-base);
+  color: white;
+  height: 30px;
+  text-align: left;
+  padding: 4px 4px 4px 10px;
+  font-weight: 600;
+}
+
+.v-table__overflow {
+  overflow: hidden !important;
+}
+
+.left-group {
+  position: absolute;
+  height: 100%;
+  width: 233px;
+}
+
+.grid-left {
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 305px);
+}
+
+.footer-area {
+  position: absolute;
+  top: calc(100vh - 215px);
+  height: 75px;
+  width: 100%;
+}
+
+.area {
+  position: absolute;
+  left: 233px;
+  top: 0;
+  bottom: 75px;
+  right: 0;
+}
+
+.v-card-main {
+  margin: 10px 0 0 10px;
+  height: calc(100% - 10px);
+  padding: 10px 10px 10px 10px;
+}
+
+.div-destaque {
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--v-color1-base);
+  text-align: center;
+  height: 29px;
+  margin-top: 15px;
+  padding: 0 5px;
+}
+
+.h2-destaque {
+  color: #f95554;
+}
+
+.telefone {
+  margin-left: 10px;
+}
+
+.endereco {
+  margin-top: 15px;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.schedules-left-card {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 390px;
+}
+
+.schedules-workspace-card {
+  padding: 10px 10px 0 10px;
+  margin-left: 400px;
+}
+
+[header-table] .col {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+[table-footer] tbody tr:last-child * {
+  position: sticky;
+  z-index: 1;
+  height: 40px;
+  bottom: 0;
+  font-weight: bold;
+  border-top-width: 3px;
+  background-color: var(--v-color1-base);
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(224, 224, 224);
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+}
+
+.emojis {
+  float: right;
+}
+
+#Emojis {
+  height: 150px;
+}
+
+.container-emoji {
+  height: 150px!important;
+}

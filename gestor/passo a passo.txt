@@ -1,0 +1,11 @@
+Install NodeJs
+Install Yarn
+yarn global add @vue/cli @vue/cli-service-global
+vue create 'nome do projeto'
+vue add electron-builder
+vue add vuetify
+yarn add vue-router
+yarn add node-firebird --PARA ACESSO AO FIREBIRD
+
+yarn serve --RODA NO NAVEGADOR
+yarn electron:serve --RODA COMO EXECUTÁVEL

@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "preinstall": "yarn global add @vue/cli",
+    "pull": "git pull && cd api && git pull && cd .. && cd integrator && git pull",
+    "api": "cd api && yarn",
+    "api:update": "cd api && git pull",
+    "api:serve": "cd api && yarn dev",
+    "i8r": "cd integrator && yarn",
+    "i8r:update": "cd integrator && git pull",
+    "i8r:serve": "cd integrator && yarn dev",
+    "g4r": "cd gestor && yarn",
+    "g4r:update": "git pull",
+    "g4r:build": "cd gestor && npm run build",
+    "g4r:serve": "cd gestor && yarn serve",
+    "g4r:electron:build": "cd gestor && yarn electron:build",
+    "g4r:electron:serve": "cd gestor && yarn electron:serve"
+  },
+  "dependencies": {}
+}
